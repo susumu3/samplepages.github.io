@@ -1,0 +1,605 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+*, *:before, *:after {
+  /* border-boxを全ての要素に適用する */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  /* フォントサイズの計算に1rem=10pxを使いたいのでhtmlに62.5%を指定 */
+  font-size: 62.5%;
+}
+
+img {
+  /* 指定しておかないと画像の下に微妙な隙間ができてしまうことがある */
+  vertical-align: bottom;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #2b2b2b;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  section p {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrap {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: calc(100% - 32px) !important;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  position: relative;
+  height: 620px;
+  width: 100%;
+  background: url(../img/header.png);
+  background-size: cover;
+}
+
+.header_nav {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  height: 64px;
+  width: 100%;
+}
+
+.header_nav_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav_logo h2 {
+  font-size: 3.6rem;
+  color: #fff;
+  font-weight: 200;
+  line-height: 64px;
+}
+
+.hamburger-menu {
+  position: relative;
+  width: 39px;
+  height: 64px;
+  cursor: pointer;
+}
+
+.hamburger-menu .hamburger-menu_line, .hamburger-menu::before, .hamburger-menu::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}
+
+.hamburger-menu::before, .hamburger-menu::after {
+  content: '';
+}
+
+.hamburger-menu::before {
+  top: calc(50% - 8px);
+}
+
+.hamburger-menu::after {
+  top: calc(50% + 8px);
+}
+
+.header_title {
+  color: #fff;
+  font-size: 12rem;
+  font-weight: normal;
+  padding-top: 240px;
+  text-align: center;
+}
+
+.header_title_sub {
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+}
+
+.header_title_sub::before, .header_title_sub::after {
+  content: '';
+  background-color: #fff;
+  height: 2px;
+  width: 12px;
+  display: inline-block;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.section_header h3 {
+  font-size: 3.6rem;
+  font-family: 'Poppins';
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 57px;
+  position: relative;
+}
+
+.section_header h3::after {
+  content: "";
+  height: 1px;
+  width: 40px;
+  background-color: #000;
+  position: absolute;
+  top: 170%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section_header p {
+  font-size: 1.6rem;
+  line-height: 28px;
+  color: #2b2b2b;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  br {
+    display: none;
+  }
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#concept {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #fff), color-stop(30%, #EDEDED));
+  background: linear-gradient(#fff 70%, #EDEDED 30%);
+}
+
+#concept img {
+  height: 400px;
+}
+
+.works {
+  height: 1609px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.works .colmun {
+  width: calc(50% - 30px);
+}
+
+@media screen and (max-width: 767px) {
+  .works .colmun {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .works {
+    display: block;
+    height: 2900px;
+  }
+}
+
+.works h4 {
+  font-family: Poppins;
+  font-weight: bold;
+  color: #333333;
+  font-size: 2.4rem;
+  padding: 20px 0 16px;
+}
+
+.works p {
+  font-size: 1.6rem;
+  line-height: 24px;
+  font-weight: 200;
+}
+
+.work {
+  width: 100%;
+}
+
+.work01 {
+  height: 560px;
+  margin-bottom: 80px;
+}
+
+.work02 {
+  height: 769px;
+}
+
+.work03 {
+  margin: 80px 0;
+  height: 769px;
+}
+
+.work04 {
+  height: 539px;
+  margin-bottom: 80px;
+}
+
+#florist {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #EDEDED), color-stop(50%, #fff));
+  background: linear-gradient(#EDEDED 50%, #fff 50%);
+}
+
+.florists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .florists {
+    display: block;
+  }
+}
+
+.florist {
+  width: 31%;
+}
+
+@media screen and (max-width: 767px) {
+  .florist {
+    width: 100%;
+    margin-bottom: 90px;
+  }
+  .florist:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.florist h4 {
+  font-family: Poppins;
+  color: #333333;
+  font-weight: bold;
+  font-size: 2.4rem;
+  padding: 20px 0 5px;
+}
+
+.florist p {
+  font-size: 1.6rem;
+  line-height: 24px;
+  font-weight: 200;
+}
+
+.shop_infomation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .shop_infomation {
+    display: block;
+  }
+}
+
+.shop_infomation figure {
+  width: 47.5%;
+}
+
+@media screen and (max-width: 767px) {
+  .shop_infomation figure {
+    width: 100%;
+  }
+}
+
+.shop_infomation figure img {
+  height: 100%;
+}
+
+.shop_infomation .shop {
+  width: 47.5%;
+  height: 320px;
+}
+
+@media screen and (max-width: 767px) {
+  .shop_infomation .shop {
+    width: 100%;
+    overflow: auto;
+  }
+}
+
+.shop_text {
+  text-align: center;
+}
+
+.shop p {
+  font-size: 1.6rem;
+  padding-left: 16px;
+  text-align: left;
+}
+
+.shop .box {
+  height: 64px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 12px 38px 0 0;
+}
+
+@media screen and (max-width: 767px) {
+  .shop .box {
+    min-width: 300px;
+  }
+}
+
+.shop .box h5 {
+  min-width: 64px;
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-left: 38px;
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .shop .box h5 {
+    margin-left: 0;
+  }
+}
+
+.shop .half-box {
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 12px 38px 0 0;
+}
+
+.shop .half-box h5 {
+  min-width: 64px;
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-left: 38px;
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .shop .half-box h5 {
+    margin-left: 0;
+  }
+}
+
+.shop .vertical_var {
+  border-left: #000 solid 1px;
+  margin-left: 16px;
+}
+
+#contact {
+  height: 450px;
+  background-image: url(../img/contact_us.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  margin-top: 40px;
+  position: relative;
+}
+
+#contact::before {
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+}
+
+.contact_us {
+  height: 80px;
+  width: 360px;
+  background-color: #fff;
+  position: absolute;
+  top: 311px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contact_us .contact_text {
+  font-size: 2.0rem;
+  line-height: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact_us .contact_text {
+    text-align: center;
+  }
+}
+
+.contact_us .contact_text .size {
+  padding-right: 24px;
+  font-size: 1.3em;
+}
+
+footer {
+  height: 40px;
+  text-align: center;
+}
+
+footer small {
+  font-size: 1.6rem;
+  line-height: 40px;
+}
+
+footer p {
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 40px;
+  padding-bottom: 10px;
+}
+
+footer p a {
+  color: #2b2b2b;
+}
+
+footer p a:hover {
+  color: brown;
+}
+/*# sourceMappingURL=style.css.map */
