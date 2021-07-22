@@ -532,7 +532,7 @@ img {
 
 #contact {
   height: 450px;
-  background-image: url(../img/contact_us.png);
+  background-image: url(contact_us.png);
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
